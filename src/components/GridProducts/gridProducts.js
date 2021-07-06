@@ -1,10 +1,10 @@
 // Third-party imports
-import React, { useState } from "react"
+import React, { useState } from "react";
 
 // Global imports
 
 // Local imports
-import {GridContainer} from './styles'
+import { GridContainer } from "./styles";
 import mockedItems from "./mockedItems.json";
 import GridCard from "../GridCard/gridCard";
 
@@ -18,21 +18,26 @@ import GridCard from "../GridCard/gridCard";
  * @param {?} param? - ?
  */
 const GridProducts = () => {
+    const [menu, setMenu] = useState([]);
 
-    const [menu, setMenu] = useState([])
-
-    const addingToMenu = (dish) => {
-        // setMenu([...menu, dish])
-        console.log(dish)
-    }
+    const addingToMenu = (order) => {
+        let newOrder = [...menu, order];
+        setMenu(newOrder);
+        console.log(newOrder);
+    };
 
     return (
         <GridContainer>
-            {mockedItems.map(item => 
-                (<GridCard key={item.title} title={item.title} image={item.thumbnailUrl} addingToCart={addingToMenu} />)
-            )}
+            {mockedItems.map((item) => (
+                <GridCard
+                    key={item.title}
+                    title={item.title}
+                    image={item.thumbnailUrl}
+                    addingToCart={addingToMenu}
+                />
+            ))}
         </GridContainer>
-    )
-}
+    );
+};
 
-export default GridProducts
+export default GridProducts;

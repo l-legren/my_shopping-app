@@ -22,21 +22,29 @@ const GridCard = ({ title, image, addingToCart }) => {
     const [menu, setMenu] = useState(0);
 
     const addToMenu = () => {
-        let newQuantity = menu + 1
-        setMenu(newQuantity);
-        addingToCart({
-            dish: title,
-            quantity: newQuantity
-        });
+        if (menu < 10) {
+            let newQuantity = menu + 1;
+            setMenu(newQuantity);
+            addingToCart({
+                dish: title,
+                quantity: newQuantity,
+            });
+        } else {
+            setMenu(10)
+        }
     };
 
     const removeFromMenu = () => {
-        let newQuantity = menu - 1;
-        setMenu(newQuantity);
-        addingToCart({
-            dish: title,
-            quantity: newQuantity
-        });
+        if (menu > 0) {
+            let newQuantity = menu - 1;
+            setMenu(newQuantity);
+            addingToCart({
+                dish: title,
+                quantity: newQuantity,
+            });
+        } else {
+            setMenu(0)
+        }
     };
 
     return (
@@ -44,21 +52,11 @@ const GridCard = ({ title, image, addingToCart }) => {
             <CardHeader title={title} />
             <img src={image} alt={title} />
             <ButtonWrapper>
-                <MinusPlusButton
-                    variant="contained"
-                    color="primary"
-                    onClick={() => removeFromMenu()}
-                >
+                <MinusPlusButton onClick={() => removeFromMenu()}>
                     -
                 </MinusPlusButton>
                 <Quantity>{menu}</Quantity>
-                <MinusPlusButton
-                    variant="contained"
-                    color="primary"
-                    onClick={() => addToMenu()}
-                >
-                    +
-                </MinusPlusButton>
+                <MinusPlusButton onClick={() => addToMenu()}>+</MinusPlusButton>
             </ButtonWrapper>
         </SingleCard>
     );

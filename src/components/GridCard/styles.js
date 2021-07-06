@@ -2,7 +2,6 @@
 import styled from "styled-components";
 
 // Global imports
-import { Button } from "@material-ui/core";
 
 // Local imports
 
