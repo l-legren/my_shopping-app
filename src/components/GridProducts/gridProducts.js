@@ -4,6 +4,9 @@ import React from "react"
 // Global imports
 
 // Local imports
+import {GridContainer} from './styles'
+import mockedItems from "./mockedItems.json";
+import GridCard from "../GridCard/gridCard";
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -17,7 +20,11 @@ import React from "react"
 const GridProducts = () => {
 
     return (
-
+        <GridContainer>
+            {mockedItems.map(item => 
+                (<GridCard title={item.title} image={item.thumbnailUrl} />)
+            )}
+        </GridContainer>
     )
 }
 

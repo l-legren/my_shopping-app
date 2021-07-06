@@ -5,7 +5,7 @@ import React from "react";
 
 // Local imports
 import { PageContainer } from "./styles";
-import GridCard from "../components/GridCard/gridCard";
+import GridProducts from "../components/GridProducts/gridProducts";
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -20,7 +20,7 @@ const ShoppingPage = () => {
     return (
         <PageContainer>
             <h1>Hey</h1>
-            <GridCard />
+            <GridProducts />
         </PageContainer>
     );
 };

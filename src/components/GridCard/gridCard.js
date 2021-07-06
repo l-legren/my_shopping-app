@@ -1,11 +1,10 @@
 // Third-party imports
-import React, { useState } from "react";
-import { CardHeader, Button } from "@material-ui/core";
+import React from "react";
+import { CardHeader } from "@material-ui/core";
 
 // Global imports
 
 // Local imports
-import mockedItems from "./mockedItems.json";
 import {
     SingleCard,
     AddButton,

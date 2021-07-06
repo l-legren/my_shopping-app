@@ -16,7 +16,6 @@ import { Button } from "@material-ui/core";
  * @param {?} param? - ?
  */
 export const SingleCard = styled.div`
-    width: max-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
