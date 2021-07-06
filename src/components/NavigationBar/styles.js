@@ -1,10 +1,13 @@
 // Third-party imports
-import styled from "styled-components"
+import styled from "styled-components";
+import { Box } from "@material-ui/core";
+import { Link } from "react-router-dom";
+// import { withTheme } from "@material-ui/styles";
 
 // Global imports
 
 // Local imports
-import { Box, Link } from "@material-ui/core";
+
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -12,8 +15,8 @@ export const BarContainer = styled(Box)`
     height: 55px;
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid black;
-    box-shadow: 0px 1px 1px black;
+    box-shadow: -1px 1px 8px black;
+    background-color: ${({theme}) => theme.palette.common.white};
 `;
 
 export const NavBarContent = styled(Box)`
@@ -21,21 +24,29 @@ export const NavBarContent = styled(Box)`
     align-items: center;
     justify-content: space-between;
     width: 1200px;
-    background-color: gray;
-`
+`;
 
 export const Title = styled(Link)`
     font-size: 25px;
     cursor: pointer;
-`
+    text-decoration: none;
+    color: black;
+`;
 
 export const LinksWrapper = styled(Box)`
     display: flex;
-`
+`;
 
 export const PageLink = styled(Link)`
     font-size: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px 15px 10px 15px;
     cursor: pointer;
-`
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+
+    &:hover {
+        background-color: ${({theme}) => theme.palette.primary.main};
+        color: ${({theme}) => theme.palette.common.white};
+    }
+`;

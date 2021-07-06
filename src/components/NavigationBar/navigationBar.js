@@ -1,10 +1,15 @@
 // Third-party imports
-import React from "react"
-
+import React from "react";
 // Global imports
 
 // Local imports
-import { BarContainer, NavBarContent, Title, PageLink, LinksWrapper } from "./styles"
+import {
+    BarContainer,
+    NavBarContent,
+    Title,
+    PageLink,
+    LinksWrapper,
+} from "./styles";
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -16,18 +21,25 @@ import { BarContainer, NavBarContent, Title, PageLink, LinksWrapper } from "./st
  * @param {?} param? - ?
  */
 const Navigation = () => {
+    const links = [
+        { url: "/cart", routeName: "cart", text: "Cart" },
+        { url: "/shopping", routeName: "shopping", text: "Shop" },
+    ];
 
     return (
         <BarContainer>
             <NavBarContent>
-                <Title>My Shopping App</Title>
+                <Title to="/">My Shopping App</Title>
                 <LinksWrapper>
-                    <PageLink>Cart</PageLink>
-                    <PageLink>Shop</PageLink>
+                    {links.map((link) => (
+                        <PageLink key={link.routeName} to={link.url}>
+                            {link.text}
+                        </PageLink>
+                    ))}
                 </LinksWrapper>
             </NavBarContent>
         </BarContainer>
     );
-}
+};
 
-export default Navigation
+export default Navigation;

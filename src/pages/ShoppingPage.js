@@ -4,7 +4,7 @@ import React from "react";
 // Global imports
 
 // Local imports
-import { PageContainer, PageWrapper } from "./styles";
+import { PageContainer } from "./styles";
 
 ////////////////////////////////////////////////////////////////////////////////
 
