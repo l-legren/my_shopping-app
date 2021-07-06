@@ -1,5 +1,5 @@
 // Third-party imports
-import React from "react"
+import React, { useState } from "react"
 
 // Global imports
 
@@ -19,10 +19,17 @@ import GridCard from "../GridCard/gridCard";
  */
 const GridProducts = () => {
 
+    const [menu, setMenu] = useState([])
+
+    const addingToMenu = (dish) => {
+        // setMenu([...menu, dish])
+        console.log(dish)
+    }
+
     return (
         <GridContainer>
             {mockedItems.map(item => 
-                (<GridCard title={item.title} image={item.thumbnailUrl} />)
+                (<GridCard key={item.title} title={item.title} image={item.thumbnailUrl} addingToCart={addingToMenu} />)
             )}
         </GridContainer>
     )
