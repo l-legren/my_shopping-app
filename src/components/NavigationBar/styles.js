@@ -11,11 +11,14 @@ import { Link } from "react-router-dom";
 
 ////////////////////////////////////////////////////////////////////////////////
 
-export const BarContainer = styled(Box)`
+export const BarContainer = styled.div`
     height: 55px;
+    position: sticky;
+    top: 0px;
     display: flex;
     justify-content: center;
     box-shadow: -1px 1px 8px black;
+    z-index: 1;
     background-color: ${({theme}) => theme.palette.common.white};
 `;
 

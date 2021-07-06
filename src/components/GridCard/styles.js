@@ -26,5 +26,4 @@ export const SingleCard = styled.div`
 export const AddButton = styled(Button)`
     border-radius: 10px;
     margin: 10px 0px 10px 0px;
-    padding: 10px;
 `;

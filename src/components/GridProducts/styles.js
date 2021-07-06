@@ -22,6 +22,7 @@ export const GridContainer = styled.div`
     row-gap: 12px;
     grid-template-columns: repeat(3, 1fr);
     overflow-x: hidden;
+    margin: auto;
 
     @media (max-width: 960px) {
         grid-template-columns: repeat(2, 1fr);

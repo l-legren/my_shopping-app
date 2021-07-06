@@ -29,7 +29,7 @@ const GridCard = ({ title, image }) => {
         <SingleCard styles={{ width: "max-content" }}>
             <CardHeader title={title} />
             <img src={image} alt={title} />
-            <AddButton variant="contained" color="primary" onClick={addToBasket}>Add to basket</AddButton>
+            <AddButton variant="contained" color="primary" onClick={addToBasket}>ADD</AddButton>
         </SingleCard>
     );
 };
