@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Navigation from "./components/NavigationBar/navigationBar";
+import styled from "styled-components";
+import {Switch, Route} from 'react-router-dom'
+
+// Local Imports
+import ShoppingPage from "./pages/ShoppingPage";
+import WelcomePage from "./pages/WelcomePage";
+import CartPage from "./pages/CartPage";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const AppContainer = styled.div`
+    `;
+
+    return (
+        <AppContainer>
+            <Navigation />
+
+            <Switch>
+                <Route exact path="/" render={WelcomePage} />
+                <Route path="/cart" render={CartPage} />
+                <Route path="/shopping" render={ShoppingPage} />
+            </Switch>
+        </AppContainer>
+    );
 }
 
 export default App;
