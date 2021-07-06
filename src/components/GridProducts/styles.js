@@ -1,24 +1,20 @@
 // Third-party imports
-import React from "react"
+import styled from "styled-components"
 
 // Global imports
+import { Grid } from "@material-ui/core"
 
 // Local imports
 
 ////////////////////////////////////////////////////////////////////////////////
 
 /**
- * @function GridProducts
+ * @function ComponentName
  * @category Components
  * @subcategory ?
  * @description ?
  * @param {?} param? - ?
  */
-const GridProducts = () => {
+export const ComponentName = styled.?`
 
-    return (
-
-    )
-}
-
-export default GridProducts
+`

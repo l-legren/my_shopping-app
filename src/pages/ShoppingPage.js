@@ -5,6 +5,7 @@ import React from "react";
 
 // Local imports
 import { PageContainer } from "./styles";
+import GridCard from "../components/GridCard/gridCard";
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -18,7 +19,8 @@ import { PageContainer } from "./styles";
 const ShoppingPage = () => {
     return (
         <PageContainer>
-                <h1>Hey</h1>
+            <h1>Hey</h1>
+            <GridCard />
         </PageContainer>
     );
 };

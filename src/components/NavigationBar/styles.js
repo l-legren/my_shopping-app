@@ -31,6 +31,7 @@ export const Title = styled(Link)`
     cursor: pointer;
     text-decoration: none;
     color: black;
+    color: ${({ theme }) => theme.palette.primary.main};
 `;
 
 export const LinksWrapper = styled(Box)`
@@ -43,10 +44,10 @@ export const PageLink = styled(Link)`
     cursor: pointer;
     text-decoration: none;
     border-radius: 5px;
-    color: black;
+    color: ${({ theme }) => theme.palette.primary.main};
 
     &:hover {
-        background-color: ${({theme}) => theme.palette.primary.main};
-        color: ${({theme}) => theme.palette.common.white};
+        background-color: ${({ theme }) => theme.palette.primary.main};
+        color: ${({ theme }) => theme.palette.common.white};
     }
 `;
