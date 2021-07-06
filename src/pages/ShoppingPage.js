@@ -17,10 +17,15 @@ import GridProducts from "../components/GridProducts/gridProducts";
  * @param {?} param? - ?
  */
 const ShoppingPage = () => {
+
+    const passingToMenu = (data) => {
+        console.log(data)
+    }
+
     return (
         <PageContainer>
             <h1>Hey</h1>
-            <GridProducts />
+            <GridProducts passingMenu={passingToMenu} />
         </PageContainer>
     );
 };

@@ -17,7 +17,7 @@ import GridCard from "../GridCard/gridCard";
  * @description ?
  * @param {?} param? - ?
  */
-const GridProducts = () => {
+const GridProducts = ({passingMenu}) => {
     const [menu, setMenu] = useState([]);
 
     const addingToMenu = (order) => {
@@ -28,7 +28,9 @@ const GridProducts = () => {
             return acc;
         }, []);
 
-        setMenu(reducedOrder);
+        setMenu(newOrder);
+        // console.log(reducedOrder);
+        passingMenu(reducedOrder)
     };
 
     return (
