@@ -22,8 +22,13 @@ const GridProducts = () => {
 
     const addingToMenu = (order) => {
         let newOrder = [...menu, order];
-        setMenu(newOrder);
-        console.log(newOrder);
+
+        let reducedOrder = newOrder.reduce((acc, cur) => {
+            acc[cur.dish] = cur.quantity;
+            return acc;
+        }, []);
+
+        setMenu(reducedOrder);
     };
 
     return (
