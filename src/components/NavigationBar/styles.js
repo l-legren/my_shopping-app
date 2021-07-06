@@ -4,10 +4,11 @@ import styled from "styled-components"
 // Global imports
 
 // Local imports
+import { Box, Link } from "@material-ui/core";
 
 ////////////////////////////////////////////////////////////////////////////////
 
-export const BarContainer = styled.div`
+export const BarContainer = styled(Box)`
     height: 55px;
     display: flex;
     justify-content: center;
@@ -15,7 +16,7 @@ export const BarContainer = styled.div`
     box-shadow: 0px 1px 1px black;
 `;
 
-export const NavBarContent = styled.div`
+export const NavBarContent = styled(Box)`
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,16 +24,16 @@ export const NavBarContent = styled.div`
     background-color: gray;
 `
 
-export const Title = styled.a`
+export const Title = styled(Link)`
     font-size: 25px;
     cursor: pointer;
 `
 
-export const LinksWrapper = styled.div`
+export const LinksWrapper = styled(Box)`
     display: flex;
 `
 
-export const Link = styled.a`
+export const PageLink = styled(Link)`
     font-size: 20px;
     padding-left: 20px;
     padding-right: 20px;

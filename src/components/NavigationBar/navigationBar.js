@@ -4,7 +4,7 @@ import React from "react"
 // Global imports
 
 // Local imports
-import { BarContainer, NavBarContent, Title, Link, LinksWrapper } from "./styles"
+import { BarContainer, NavBarContent, Title, PageLink, LinksWrapper } from "./styles"
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -22,12 +22,12 @@ const Navigation = () => {
             <NavBarContent>
                 <Title>My Shopping App</Title>
                 <LinksWrapper>
-                    <Link>Cart</Link>
-                    <Link>Shop</Link>
+                    <PageLink>Cart</PageLink>
+                    <PageLink>Shop</PageLink>
                 </LinksWrapper>
             </NavBarContent>
         </BarContainer>
-    )
+    );
 }
 
 export default Navigation
