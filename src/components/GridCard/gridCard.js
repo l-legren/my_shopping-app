@@ -1,12 +1,11 @@
 // Third-party imports
 import React, { useState } from "react";
-import { CardHeader } from "@material-ui/core";
 import { useDispatch} from "react-redux";
 
 // Global imports
 
 // Local imports
-import { SingleCard, MinusPlusButton, ButtonWrapper, Quantity } from "./styles";
+import { SingleCard, MinusPlusButton, ButtonWrapper, Quantity, CardHeader } from "./styles";
 import { newProduct, addUnit, removeUnit, removeProduct } from "../../actions";
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -16,8 +15,8 @@ import { newProduct, addUnit, removeUnit, removeProduct } from "../../actions";
  * @category Components
  * @subcategory ?
  * @description ?
- * @param {title} string - Name of the dish
- * @param {image} string - Image of the dish
+ * @param {title} string - Name of the product
+ * @param {image} string - Image of the product
  */
 const GridCard = ({ title, image, id }) => {
     const dispatch = useDispatch();
@@ -56,7 +55,7 @@ const GridCard = ({ title, image, id }) => {
 
     return (
         <SingleCard styles={{ width: "max-content" }}>
-            <CardHeader title={title} />
+            <CardHeader>{ title }</CardHeader>
             <img src={image} alt={title} />
             <ButtonWrapper>
                 <MinusPlusButton onClick={() => removeFromMenu()}>

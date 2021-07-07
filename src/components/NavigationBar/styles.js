@@ -16,9 +16,9 @@ export const BarContainer = styled.div`
     top: 0px;
     display: flex;
     justify-content: center;
-    box-shadow: -1px 1px 8px black;
+    box-shadow: -1px 1px 8px #063760;
     z-index: 1;
-    background-color: #E36588;
+    background-color: #f0f6f6;
 `;
 
 export const NavBarContent = styled(Box)`
@@ -33,7 +33,7 @@ export const Title = styled(Link)`
     font-size: 25px;
     cursor: pointer;
     text-decoration: none;
-    color: #2fda96;
+    color: #42bfdd;
 `;
 
 export const LinksWrapper = styled(Box)`
@@ -47,10 +47,10 @@ export const PageLink = styled(Link)`
     cursor: pointer;
     text-decoration: none;
     border-radius: 5px;
-    color: #2fda96;
+    color: #42bfdd;
 
     &:hover {
-        background-color: #2fda96;
-        color: white;
+        background-color: #42bfdd;
+        color: #f0f6f6;
     }
 `;

@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 // Global imports
 
 // Local imports
-import { PageContainer } from "./styles";
+import { PageContainer, HeadlineContainer, HeadlineShopping } from "./styles";
 import GridProducts from "../components/GridProducts/gridProducts";
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -28,7 +28,9 @@ const ShoppingPage = () => {
 
     return (
         <PageContainer>
-            <h1>Please select a products</h1>
+            <HeadlineContainer>
+                <HeadlineShopping>Take what you want!</HeadlineShopping>
+            </HeadlineContainer>
             <GridProducts />
         </PageContainer>
     );

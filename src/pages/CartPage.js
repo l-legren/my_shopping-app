@@ -6,6 +6,7 @@ import { useSelector } from "react-redux";
 
 // Local imports
 import { PageContainer } from "./styles";
+import CheckoutList from "../components/CheckoutList/checkoutList";
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -25,7 +26,9 @@ const CartPage = () => {
         console.log("From Cart", selectedProducts)
     }, [selectedProducts]);
 
-    return <PageContainer>This is the Cart Page</PageContainer>;
+    return (<PageContainer>
+        <CheckoutList />
+    </PageContainer>)
 };
 
 export default CartPage;

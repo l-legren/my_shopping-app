@@ -7,19 +7,20 @@ import styled from "styled-components";
 
 ////////////////////////////////////////////////////////////////////////////////
 
-/**
- * @function ComponentName
- * @category Components
- * @subcategory ?
- * @description ?
- * @param {?} param? - ?
- */
 export const SingleCard = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    background-color: #f0f6f6;
+    border: 1px solid #42bfdd;
+    border-radius: 2px;
+`;
+
+export const CardHeader = styled.h2`
+    font-size: 20px;
+    font-weight: 700;
+    color: #42bfdd;
 `;
 
 export const ButtonWrapper = styled.div`
@@ -31,7 +32,7 @@ export const ButtonWrapper = styled.div`
 
 export const Quantity = styled.p`
     font-size: 20px;
-
+    color: #42bfdd
 `;
 
 export const MinusPlusButton = styled.button`
@@ -39,14 +40,14 @@ export const MinusPlusButton = styled.button`
     height: 30px;
     border-radius: 50%;
     margin: 10px 0px 10px 0px;
-    color: black;
+    color: #42bfdd;
     background-color: white;
-    border: 2px solid black;
+    border: 2px solid #42bfdd;
     cursor: pointer;
     font-size: 20px;
 
     &:hover {
-        background-color: black;
+        background-color: #42bfdd;
         color: white;
     }
 `;

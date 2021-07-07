@@ -22,3 +22,17 @@ export const PageContainer = styled.div`
         max-width: 580px;
     }
 `;
+
+export const HeadlineContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dotted #ff66b3;
+    margin: 30px 0 30px 0;
+`;
+
+export const HeadlineShopping = styled.h1`
+    font-size: 30px;
+    color: #ff66b3;
+    cursor: default;
+`;

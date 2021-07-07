@@ -10,15 +10,13 @@ import { PageContainer } from "./styles";
 
 const WelcomeContainer = styled.div`
     position: relative;
-    top: 200px;
-    height: 50vh;
+    top: 100px;
     display: flex;
-    margin: 0 auto;
     justify-content: center;
     align-items: center;
     font-size: 50px;
-    color: #2fda96;
-    background-color: #e36588;
+    color: #f0f6f6;
+    background-color: #42bfdd;
     border-radius: 50px;
     padding: 50px;
 `;
