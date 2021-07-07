@@ -35,6 +35,7 @@ export const Quantity = styled.p`
 
 export const PriceWrapper = styled.div`
     display: flex;
+    flex-direction: column;
 `;
 
 export const Price = styled.p`

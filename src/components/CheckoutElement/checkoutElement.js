@@ -20,8 +20,6 @@ import {
 /**
  * @function CheckoutElement
  * @category Components
- * @subcategory ?
- * @description ?
  * @param {?} param? - ?
  */
 const CheckoutElement = ({
@@ -30,7 +28,7 @@ const CheckoutElement = ({
     imageUrl,
     discount,
     name,
-    sales,
+    isOnSale,
 }) => {
     return (
         <ItemContainer>
@@ -39,14 +37,18 @@ const CheckoutElement = ({
                 <ArticleName>{name}</ArticleName>
                 <Quantity>Quantity: {`${quantity} units`}</Quantity>
                 <PriceWrapper>
-                    {sales ? (
+                    {isOnSale ? (
                         <strike>
                             <Price>{`Price: ${price} €`}</Price>
                         </strike>
                     ) : (
                         <Price>{`Price: ${price} €`}</Price>
                     )}
-                    {sales && <PriceDiscounted>{discount}</PriceDiscounted>}
+                    {isOnSale && (
+                        <PriceDiscounted>
+                            {`Discount Price: ${discount} €`}
+                        </PriceDiscounted>
+                    )}
                 </PriceWrapper>
             </InfoContainer>
         </ItemContainer>

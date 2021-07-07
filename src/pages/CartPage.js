@@ -13,8 +13,6 @@ import CheckoutList from "../components/CheckoutList/checkoutList";
 /**
  * @function CartPage
  * @category Components
- * @subcategory ?
- * @description ?
  * @param {?} param? - ?
  */
 const CartPage = () => {
