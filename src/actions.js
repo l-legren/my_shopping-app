@@ -1,4 +1,6 @@
 export function newProduct(userOrder) {
+
+    console.log("From actions", userOrder)
     return {
         type: "NEW_PRODUCT",
         userOrder,

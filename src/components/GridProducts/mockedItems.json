@@ -5,6 +5,7 @@
         "title": "Nike Airmax",
         "price": 105,
         "quantity": 1,
+        "sales": false,
         "discount": 100,
         "url": "https://via.placeholder.com/600/92c952",
         "thumbnailUrl": "https://via.placeholder.com/150/92c952"
@@ -15,6 +16,7 @@
         "title": "Reebok Club",
         "price": 125,
         "quantity": 1,
+        "sales": true,
         "discount": 110,
         "url": "https://via.placeholder.com/600/771796",
         "thumbnailUrl": "https://via.placeholder.com/150/771796"
@@ -25,6 +27,7 @@
         "title": "Adidas Continental",
         "price": 115,
         "quantity": 1,
+        "sales": true,
         "discount": 112,
         "url": "https://via.placeholder.com/600/24f355",
         "thumbnailUrl": "https://via.placeholder.com/150/24f355"
@@ -35,6 +38,7 @@
         "title": "Converse Chuck Taylor",
         "price": 75,
         "quantity": 1,
+        "sales": true,
         "discount": 70,
         "url": "https://via.placeholder.com/600/d32776",
         "thumbnailUrl": "https://via.placeholder.com/150/d32776"
@@ -45,6 +49,7 @@
         "title": "Asics",
         "price": 125,
         "quantity": 1,
+        "sales": true,
         "discount": 90,
         "url": "https://via.placeholder.com/600/f66b97",
         "thumbnailUrl": "https://via.placeholder.com/150/f66b97"
@@ -55,6 +60,7 @@
         "title": "New Balance",
         "price": 125,
         "quantity": 1,
+        "sales": false,
         "discount": 115,
         "url": "https://via.placeholder.com/600/56a8c2",
         "thumbnailUrl": "https://via.placeholder.com/150/56a8c2"
@@ -65,6 +71,7 @@
         "title": "Puma Suede",
         "price": 135,
         "quantity": 1,
+        "sales": true,
         "discount": 120,
         "url": "https://via.placeholder.com/600/b0f7cc",
         "thumbnailUrl": "https://via.placeholder.com/150/b0f7cc"
@@ -75,6 +82,7 @@
         "title": "Adidas Boost",
         "price": 95,
         "quantity": 1,
+        "sales": true,
         "discount": 90,
         "url": "https://via.placeholder.com/600/54176f",
         "thumbnailUrl": "https://via.placeholder.com/150/54176f"
@@ -85,6 +93,7 @@
         "title": "Nike Air Force",
         "price": 95,
         "quantity": 1,
+        "sales": false,
         "discount": 80,
         "url": "https://via.placeholder.com/600/51aa97",
         "thumbnailUrl": "https://via.placeholder.com/150/51aa97"
@@ -95,6 +104,7 @@
         "title": "Adidas Ultraboost",
         "price": 125,
         "quantity": 1,
+        "sales": false,
         "discount": 110,
         "url": "https://via.placeholder.com/600/810b14",
         "thumbnailUrl": "https://via.placeholder.com/150/810b14"
@@ -105,6 +115,7 @@
         "title": "Adidas Superstar",
         "price": 125,
         "quantity": 1,
+        "sales": false,
         "discount": 110,
         "url": "https://via.placeholder.com/600/810b14",
         "thumbnailUrl": "https://via.placeholder.com/150/810b14"
@@ -115,6 +126,7 @@
         "title": "Nike Revolution",
         "price": 125,
         "quantity": 1,
+        "sales": false,
         "discount": 110,
         "url": "https://via.placeholder.com/600/810b14",
         "thumbnailUrl": "https://via.placeholder.com/150/810b14"

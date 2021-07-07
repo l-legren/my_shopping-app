@@ -10,8 +10,9 @@ import {
     Quantity,
     ItemImage,
     InfoContainer,
-    PriceSection,
-    QuantitySection,
+    ArticleName,
+    PriceWrapper,
+    PriceDiscounted,
 } from "./styles";
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -23,15 +24,30 @@ import {
  * @description ?
  * @param {?} param? - ?
  */
-const CheckoutElement = () => {
+const CheckoutElement = ({
+    quantity,
+    price,
+    imageUrl,
+    discount,
+    name,
+    sales,
+}) => {
     return (
         <ItemContainer>
-            <ItemImage src="https://via.placeholder.com/150/92c952" />
+            <ItemImage src={imageUrl} alt={name} />
             <InfoContainer>
-                <QuantitySection>Quantity</QuantitySection>
-                <Quantity>4 units</Quantity>
-                <PriceSection>Price</PriceSection>
-                <Price>125$</Price>
+                <ArticleName>{name}</ArticleName>
+                <Quantity>Quantity: {`${quantity} units`}</Quantity>
+                <PriceWrapper>
+                    {sales ? (
+                        <strike>
+                            <Price>{`Price: ${price} €`}</Price>
+                        </strike>
+                    ) : (
+                        <Price>{`Price: ${price} €`}</Price>
+                    )}
+                    {sales && <PriceDiscounted>{discount}</PriceDiscounted>}
+                </PriceWrapper>
             </InfoContainer>
         </ItemContainer>
     );

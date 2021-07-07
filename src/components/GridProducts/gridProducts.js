@@ -1,6 +1,5 @@
 // Third-party imports
-import React, { useEffect } from "react";
-import { useSelector } from "react-redux";
+
 // Global imports
 
 // Local imports
@@ -18,13 +17,6 @@ import GridCard from "../GridCard/gridCard";
  * @param {?} param? - ?
  */
 const GridProducts = () => {
-    const selectedProducts = useSelector(
-        (state) => (state && state.products) || []
-    );
-
-    useEffect(() => {
-        console.log("From Grid", selectedProducts);
-    }, [selectedProducts]);
 
     return (
         <GridContainer>
@@ -33,7 +25,10 @@ const GridProducts = () => {
                     key={item.title}
                     title={item.title}
                     id={item.id}
+                    discount={item.discount}
                     image={item.thumbnailUrl}
+                    price={item.price}
+                    sales={item.sales}
                 />
             ))}
         </GridContainer>

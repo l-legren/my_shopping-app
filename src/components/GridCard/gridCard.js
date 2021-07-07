@@ -18,7 +18,7 @@ import { newProduct, addUnit, removeUnit, removeProduct } from "../../actions";
  * @param {title} string - Name of the product
  * @param {image} string - Image of the product
  */
-const GridCard = ({ title, image, id }) => {
+const GridCard = ({ title, image, id, discount, price, sales }) => {
     const dispatch = useDispatch();
     const [quantity, setQuantity] = useState(0);
 
@@ -29,6 +29,11 @@ const GridCard = ({ title, image, id }) => {
             if (newQuantity === 1) {
                 dispatch(newProduct({
                     id,
+                    title,
+                    image,
+                    price,
+                    discount,
+                    sales,
                     quantity: 1
                 }));
             } else {

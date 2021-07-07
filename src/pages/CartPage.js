@@ -27,7 +27,7 @@ const CartPage = () => {
     }, [selectedProducts]);
 
     return (<PageContainer>
-        <CheckoutList />
+        <CheckoutList selectedProducts={selectedProducts} />
     </PageContainer>)
 };
 
