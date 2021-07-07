@@ -1,7 +1,7 @@
 // Third-party imports
 import React, { useState } from "react";
 import { CardHeader } from "@material-ui/core";
-import { useDispatch } from "react-redux";
+import { useDispatch} from "react-redux";
 
 // Global imports
 

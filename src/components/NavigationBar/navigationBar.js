@@ -29,7 +29,7 @@ const Navigation = () => {
     return (
         <BarContainer>
             <NavBarContent>
-                <Title to="/">My Shopping App</Title>
+                <Title to="/">Sneakers Point</Title>
                 <LinksWrapper>
                     {links.map((link) => (
                         <PageLink key={link.routeName} to={link.url}>

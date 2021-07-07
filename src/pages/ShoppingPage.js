@@ -1,5 +1,6 @@
 // Third-party imports
-import React from "react";
+import React, { useEffect } from "react";
+import { useSelector } from "react-redux";
 
 // Global imports
 
@@ -16,11 +17,18 @@ import GridProducts from "../components/GridProducts/gridProducts";
  * @description ?
  * @param {?} param? - ?
  */
+
 const ShoppingPage = () => {
+    const selectedProducts = useSelector(
+        (state) => (state && state.products) || []
+    );
+    useEffect(() => {
+        console.log(selectedProducts);
+    }, [selectedProducts]);
 
     return (
         <PageContainer>
-            <h1>Hey</h1>
+            <h1>Please select a products</h1>
             <GridProducts />
         </PageContainer>
     );

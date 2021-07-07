@@ -39,6 +39,6 @@ export default function reducer(state = initialState, action) {
         };
     }
 
-    console.log("Redux state", state);
+    // console.log("Redux state", state);
     return state;
 }

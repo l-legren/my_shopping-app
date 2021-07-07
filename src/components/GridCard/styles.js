@@ -39,14 +39,14 @@ export const MinusPlusButton = styled.button`
     height: 30px;
     border-radius: 50%;
     margin: 10px 0px 10px 0px;
-    color: ${({ theme }) => theme.palette.primary.main};
+    color: black;
     background-color: white;
-    border: 2px solid ${({ theme }) => theme.palette.primary.main};
+    border: 2px solid black;
     cursor: pointer;
     font-size: 20px;
 
     &:hover {
-        background-color: ${({ theme }) => theme.palette.primary.main};
+        background-color: black;
         color: white;
     }
 `;
