@@ -6,13 +6,8 @@ import { useDispatch } from "react-redux";
 // Global imports
 
 // Local imports
-import {
-    SingleCard,
-    MinusPlusButton,
-    ButtonWrapper,
-    Quantity,
-} from "./styles";
-import { getOrder } from "../../actions";
+import { SingleCard, MinusPlusButton, ButtonWrapper, Quantity } from "./styles";
+import { newProduct, addUnit, removeUnit, removeProduct } from "../../actions";
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -33,13 +28,14 @@ const GridCard = ({ title, image, id }) => {
         if (quantity < 10) {
             let newQuantity = quantity + 1;
             setQuantity(newQuantity);
-            dispatch(
-                getOrder({
-                    dish: title,
-                    quantity: newQuantity,
-                    id
-                })
-            );
+            if (newQuantity === 1) {
+                dispatch(newProduct({
+                    id,
+                    quantity: 1
+                }));
+            } else {
+                dispatch(addUnit(id))
+            }
         } else {
             setQuantity(10);
         }
@@ -49,13 +45,11 @@ const GridCard = ({ title, image, id }) => {
         if (quantity > 0) {
             let newQuantity = quantity - 1;
             setQuantity(newQuantity);
-            dispatch(
-                getOrder({
-                    dish: title,
-                    quantity: newQuantity,
-                    id
-                })
-            );
+            if (quantity === 1) {
+                dispatch(removeProduct(id));
+            } else {
+                dispatch(removeUnit(id))
+            }
         } else {
             setQuantity(0);
         }

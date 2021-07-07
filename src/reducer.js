@@ -1,19 +1,41 @@
 const initialState = {
-    products: []
-}
+    products: [],
+};
 
 export default function reducer(state = initialState, action) {
-    
-    if (action.type === "ADD_ORDER") {
+    if (action.type === "NEW_PRODUCT") {
         state = {
             ...state,
-            products: state.products.map((product) => {
-                if (product.id === action.id) {
-                    return {...product, quantity: product.quantity + 1}
-                } else {
-                    return {...product, quantity: 1}
-                }
-            }),
+            products: [...state.products, action.userOrder],
+        };
+    }
+
+    if (action.type === "ADD_UNIT") {
+        state = {
+            ...state,
+            products: state.products.map((prod) =>
+                prod.id === action.id
+                    ? { ...prod, quantity: prod.quantity + 1 }
+                    : prod
+            ),
+        };
+    }
+
+    if (action.type === "REMOVE_UNIT") {
+        state = {
+            ...state,
+            products: state.products.map((prod) =>
+                prod.id === action.id
+                    ? { ...prod, quantity: prod.quantity - 1 }
+                    : prod
+            ),
+        };
+    }
+
+    if (action.type === "REMOVE_PRODUCT") {
+        state = {
+            ...state,
+            products: state.products.filter((prod) => prod.id !== action.id),
         };
     }
 
