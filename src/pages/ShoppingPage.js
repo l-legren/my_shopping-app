@@ -13,11 +13,7 @@ import GridProducts from "../components/GridProducts/gridProducts";
 /**
  * @function ShoppingPage
  * @category Pages
- * @subcategory ?
- * @description ?
- * @param {?} param? - ?
  */
-
 const ShoppingPage = () => {
     const selectedProducts = useSelector(
         (state) => (state && state.products) || []

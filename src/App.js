@@ -1,12 +1,12 @@
+// Global Imports
 import React from "react";
 import "./App.css";
-import Navigation from "./components/NavigationBar/navigationBar";
 import styled from "styled-components";
 import { Switch, Route } from "react-router-dom";
-
 import { ThemeProvider } from "styled-components";
 
 // Local Imports
+import Navigation from "./components/NavigationBar/navigationBar";
 import ShoppingPage from "./pages/ShoppingPage";
 import WelcomePage from "./pages/WelcomePage";
 import CartPage from "./pages/CartPage";

@@ -1,8 +1,6 @@
 // Third-party imports
 import React from "react";
 
-// Global imports
-
 // Local imports
 import {
     TotalContainer,

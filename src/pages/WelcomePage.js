@@ -23,10 +23,7 @@ const WelcomeContainer = styled.div`
 
 /**
  * @function WelcomePage
- * @category Components
- * @subcategory ?
- * @description ?
- * @param {?} param? - ?
+ * @category Pages
  */
 const WelcomePage = () => {
     return (

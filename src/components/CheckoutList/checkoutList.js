@@ -1,8 +1,6 @@
 // Third-party imports
 import React, { useEffect } from "react";
 
-// Global imports
-
 // Local imports
 import { CheckoutContainer } from "./styles";
 import CheckoutElement from "../CheckoutElement/checkoutElement";

@@ -1,6 +1,5 @@
 // Third-party imports
 import React from "react";
-// Global imports
 
 // Local imports
 import {
@@ -16,9 +15,6 @@ import {
 /**
  * @function Navigation
  * @category Components
- * @subcategory ?
- * @description ?
- * @param {?} param? - ?
  */
 const Navigation = () => {
     const links = [
