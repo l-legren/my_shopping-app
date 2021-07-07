@@ -19,7 +19,8 @@ import GridProducts from "../components/GridProducts/gridProducts";
 const ShoppingPage = () => {
 
     const passingToMenu = (data) => {
-        console.log(data)
+        console.log(Object.entries(data))
+
     }
 
     return (

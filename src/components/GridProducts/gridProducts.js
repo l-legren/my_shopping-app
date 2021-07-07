@@ -1,6 +1,5 @@
 // Third-party imports
 import React, { useState } from "react";
-
 // Global imports
 
 // Local imports
@@ -17,7 +16,9 @@ import GridCard from "../GridCard/gridCard";
  * @description ?
  * @param {?} param? - ?
  */
-const GridProducts = ({passingMenu}) => {
+const GridProducts = ({ passingMenu }) => {
+    
+    // const dispatch = useDispatch();
     const [menu, setMenu] = useState([]);
 
     const addingToMenu = (order) => {
@@ -26,10 +27,9 @@ const GridProducts = ({passingMenu}) => {
         let reducedOrder = newOrder.reduce((acc, cur) => {
             acc[cur.dish] = cur.quantity;
             return acc;
-        }, []);
+        }, {});
 
         setMenu(newOrder);
-        // console.log(reducedOrder);
         passingMenu(reducedOrder)
     };
 
@@ -39,6 +39,7 @@ const GridProducts = ({passingMenu}) => {
                 <GridCard
                     key={item.title}
                     title={item.title}
+                    id={item.id}
                     image={item.thumbnailUrl}
                     addingToCart={addingToMenu}
                 />
