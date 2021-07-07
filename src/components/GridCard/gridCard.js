@@ -18,7 +18,6 @@ import { newProduct, addUnit, removeUnit, removeProduct } from "../../actions";
  * @description ?
  * @param {title} string - Name of the dish
  * @param {image} string - Image of the dish
- * @param {inBasket} boolean - Indicates if the dish is already added to the menu
  */
 const GridCard = ({ title, image, id }) => {
     const dispatch = useDispatch();
