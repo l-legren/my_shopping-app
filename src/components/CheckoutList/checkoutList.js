@@ -22,7 +22,7 @@ const CheckoutList = ({ selectedProducts }) => {
 
     return (
         <CheckoutContainer>
-            {selectedProducts.map((product) => (
+            {selectedProducts.length > 0 ? selectedProducts.map((product) => (
                 <CheckoutElement
                     key={product.title}
                     name={product.title}
@@ -33,7 +33,8 @@ const CheckoutList = ({ selectedProducts }) => {
                     discount={product.discount.toFixed(2)}
                     isOnSale = {product.sales}
                 />
-            ))}
+            )) : 
+            "No products to show"}
             <TotalToPay selectedProducts={selectedProducts} />
         </CheckoutContainer>
     );
