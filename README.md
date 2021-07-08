@@ -32,8 +32,8 @@ To make it run just clone the repository, install all the dependencies with ```n
 
 ### Shopping Page
 
-![Registration Page](https://raw.githubusercontent.com/l-legren/my_shopping-app/master/client/shopping-page.jpg)
+![Registration Page](https://raw.githubusercontent.com/l-legren/my_shopping-app/master/public/shopping-page.jpg)
 
 ### Cart Page
 
-![Homepage](https://raw.githubusercontent.com/l-legren/my_shopping-app/master/client/cartpage.jpg)
+![Homepage](https://raw.githubusercontent.com/l-legren/my_shopping-app/master/public/cartpage.jpg)
