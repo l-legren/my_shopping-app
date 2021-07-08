@@ -9,8 +9,6 @@ import { PageContainer } from "./styles";
 ////////////////////////////////////////////////////////////////////////////////
 
 const WelcomeContainer = styled.div`
-    position: relative;
-    top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +17,7 @@ const WelcomeContainer = styled.div`
     background-color: #42bfdd;
     border-radius: 50px;
     padding: 50px;
-    margin: 50px
+    margin: 50px;
 `;
 
 /**

@@ -11,9 +11,9 @@ import {
     CardHeader,
     Image,
     Price,
+    PriceWrapper
 } from "./styles";
 import { newProduct, addUnit, removeUnit, removeProduct } from "../../actions";
-import { PriceWrapper } from "../CheckoutElement/styles";
 
 ////////////////////////////////////////////////////////////////////////////////
 

@@ -30,8 +30,9 @@ export const Image = styled.img`
 
 export const PriceWrapper = styled.div`
     display: flex;
+    flex-direction: column;
     align-items: center;
-    height: 40px;
+    min-height: 60px;
     margin-top: 10px;
 `;
 

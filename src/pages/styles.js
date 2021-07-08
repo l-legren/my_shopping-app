@@ -13,6 +13,7 @@ export const PageContainer = styled.div`
     justify-content: center;
     max-width: 1280px;
     margin: 0 auto;
+    height: 100%;
 
     @media (max-width: 960px) {
         max-width: 900px;
