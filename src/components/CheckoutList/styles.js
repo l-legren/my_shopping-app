@@ -14,3 +14,7 @@ export const CheckoutContainer = styled.div`
     align-items: flex-start;
     margin: 30px 0px 50px 30px;
 `
+
+export const NoProducts = styled.h2`
+    margin-left: 20px
+`

@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 
 // Local imports
-import { CheckoutContainer } from "./styles";
+import { CheckoutContainer, NoProducts } from "./styles";
 import CheckoutElement from "../CheckoutElement/checkoutElement";
 import TotalToPay from "../TotalToPay/totalToPay";
 
@@ -32,7 +32,9 @@ const CheckoutList = ({ selectedProducts }) => {
                     isOnSale = {product.sales}
                 />
             )) : 
-            "No products to show"}
+                <NoProducts>
+                No products added to the cart
+                </NoProducts>}
             <TotalToPay selectedProducts={selectedProducts} />
         </CheckoutContainer>
     );

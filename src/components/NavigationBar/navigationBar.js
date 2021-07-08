@@ -19,7 +19,7 @@ import {
 const Navigation = () => {
     const links = [
         { url: "/shopping", routeName: "shopping", text: "Shop" },
-        { url: "/cart", routeName: "cart", text: "Checkout" },
+        { url: "/cart", routeName: "cart", text: "Cart" },
     ];
 
     return (

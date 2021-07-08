@@ -19,6 +19,7 @@ const WelcomeContainer = styled.div`
     background-color: #42bfdd;
     border-radius: 50px;
     padding: 50px;
+    margin: 50px
 `;
 
 /**
