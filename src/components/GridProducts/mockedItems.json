@@ -17,7 +17,7 @@
         "quantity": 1,
         "sales": true,
         "discount": 110,
-        "thumbnailUrl": "https://assets.reebok.com/images/w_600,f_auto,q_auto/fcb24c3117d74573941aaa22011b7f69_9366/Club_C_85_Vintage_Weiss_BS8242_01_standard.jpg"
+        "thumbnailUrl": "https://static.footshop.com/318127/42276.jpg"
     },
     {
         "albumId": 1,
@@ -27,7 +27,7 @@
         "quantity": 1,
         "sales": true,
         "discount": 112,
-        "thumbnailUrl": "https://assets.adidas.com/images/w_600,f_auto,q_auto/8df5ab4346d7475ebb08a91500a047d3_9366/Continental_80_Schuh_Weiss_G27706_01_standard.jpg"
+        "thumbnailUrl": "https://media.sivasdescalzo.com/media/catalog/product/E/G/EG6719_sivasdescalzo-adidas-CONTINENTAL_80-1576500561-1.jpg?quality=90&fit=bounds&width=420"
     },
     {
         "albumId": 1,
@@ -77,7 +77,7 @@
         "quantity": 1,
         "sales": true,
         "discount": 90,
-        "thumbnailUrl": "https://assets.adidas.com/images/w_320,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/b56f062b132c400ab494ac67011578a5_9366/Ultraboost_4.0_DNA_Shoes_White_FY9120_01_standard.jpg"
+        "thumbnailUrl": "https://kickz.akamaized.net/de/media/images/p/600/adidas_originals-ZX_2K_BOOST-FTWWHT_FTWWHT_GREONE-1.jpg"
     },
     {
         "albumId": 1,
@@ -97,7 +97,7 @@
         "quantity": 1,
         "sales": false,
         "discount": 110,
-        "thumbnailUrl": "https://assets.adidas.com/images/w_600,f_auto,q_auto/b56f062b132c400ab494ac67011578a5_9366/Ultraboost_DNA_4.0_Laufschuh_Weiss_FY9120_01_standard.jpg"
+        "thumbnailUrl": "https://static.footshop.com/438874-full_product/80896.jpg"
     },
     {
         "albumId": 1,
@@ -107,7 +107,7 @@
         "quantity": 1,
         "sales": false,
         "discount": 110,
-        "thumbnailUrl": "https://assets.adidas.com/images/w_600,f_auto,q_auto/29d99d71262249438241ab57011b3b10_9366/Superstar_Vegan_Schuh_Weiss_FW2295_01_standard.jpg"
+        "thumbnailUrl": "https://redsport.vteximg.com.br/arquivos/ids/1020561-1000-1000/GA050008627_2.jpg?v=637193577667270000"
     },
     {
         "albumId": 1,
@@ -117,6 +117,6 @@
         "quantity": 1,
         "sales": false,
         "discount": 110,
-        "thumbnailUrl": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/cljsflkbviirew1leboc/revolution-5-laufschuh-FDtTsz.png"
+        "thumbnailUrl": "https://www.sportdeal24.de/media/image/product/434466/md/nike-revolution-5-damen-laufschuhe-white-black-light-bone-gum-lig-39.jpg.webp"
     }
 ]
