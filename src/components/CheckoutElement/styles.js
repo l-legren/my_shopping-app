@@ -13,7 +13,15 @@ export const ItemContainer = styled.div`
     margin: 10px;
 `;
 
-export const ItemImage = styled.img``;
+export const ItemImage = styled.img`
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+
+    @media(max-width: 600px) {
+        display: none;
+    }
+`;
 
 export const InfoContainer = styled.div`
     margin-left: 15px;

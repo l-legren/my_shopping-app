@@ -20,7 +20,12 @@ import {
 /**
  * @function CheckoutElement
  * @category Components
- * @param {?} param? - ?
+ * @param {name} string - Name of the product
+ * @param {imageUrl} string - Url of the Image of the product
+ * @param {quantity} number - Quantity of units added to the cart
+ * @param {discount} number - Discounted price of the product
+ * @param {price} number - Price of the product before discount
+ * @param {isOnSale} boolean - Gives information wether the product is on sale
  */
 const CheckoutElement = ({
     quantity,

@@ -23,6 +23,23 @@ export const CardHeader = styled.h2`
     color: #42bfdd;
 `;
 
+export const Image = styled.img`
+    width: 200px;
+    height: 200px;
+`;
+
+export const PriceWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin-top: 10px;
+`;
+
+export const Price = styled.p`
+    margin: 5px;
+    color: #42bfdd;
+`;
+
 export const ButtonWrapper = styled.div`
     width: 130px;
     display: flex;
@@ -32,7 +49,7 @@ export const ButtonWrapper = styled.div`
 
 export const Quantity = styled.p`
     font-size: 20px;
-    color: #42bfdd
+    color: #42bfdd;
 `;
 
 export const MinusPlusButton = styled.button`

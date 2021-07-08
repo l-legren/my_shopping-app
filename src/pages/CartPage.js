@@ -15,17 +15,18 @@ import CheckoutList from "../components/CheckoutList/checkoutList";
  * @category Pages
  */
 const CartPage = () => {
-
     const selectedProducts = useSelector(
         (state) => (state && state.products) || []
     );
     useEffect(() => {
-        console.log("From Cart", selectedProducts)
+        console.log("From Cart", selectedProducts);
     }, [selectedProducts]);
 
-    return (<PageContainer>
-        <CheckoutList selectedProducts={selectedProducts} />
-    </PageContainer>)
+    return (
+        <PageContainer>
+            <CheckoutList selectedProducts={selectedProducts} />
+        </PageContainer>
+    );
 };
 
 export default CartPage;

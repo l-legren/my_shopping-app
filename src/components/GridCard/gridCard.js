@@ -9,8 +9,11 @@ import {
     ButtonWrapper,
     Quantity,
     CardHeader,
+    Image,
+    Price,
 } from "./styles";
 import { newProduct, addUnit, removeUnit, removeProduct } from "../../actions";
+import { PriceWrapper } from "../CheckoutElement/styles";
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -69,9 +72,21 @@ const GridCard = ({ title, image, id, discount, price, sales }) => {
     return (
         <SingleCard styles={{ width: "max-content" }}>
             <CardHeader>{title}</CardHeader>
-            <img src={image} alt={title} />
+            <Image src={image} alt={title} />
+            <PriceWrapper>
+                {sales ? (
+                    <strike>
+                        <Price>{`${price} €`}</Price>
+                    </strike>
+                ) : (
+                    <Price>{`${price} €`}</Price>
+                )}
+                {sales && <Price>{`${discount} €`}</Price>}
+            </PriceWrapper>
             <ButtonWrapper>
-                <MinusPlusButton onClick={() => removeFromMenu()}>-</MinusPlusButton>
+                <MinusPlusButton onClick={() => removeFromMenu()}>
+                    -
+                </MinusPlusButton>
                 <Quantity>{quantity}</Quantity>
                 <MinusPlusButton onClick={() => addToMenu()}>+</MinusPlusButton>
             </ButtonWrapper>
